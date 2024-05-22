@@ -1,24 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"> 
+    <!-- Link to common styles -->
+    <link rel="stylesheet" href="./common.css">
+    <!-- Link to about page specific styles -->
+    <link rel="stylesheet" href="./about.css">
+    <title>Your Favourite Bakery</title>
 </head>
+
 <body>
     <header>
-        <nav class="nav-bar">
-            <div class="topnav-right">
-              <a href="Accueil" class="active">Accueil</a>
-              <a href="about.html">About us</a>
-              <a href="contact.html">Order now</a>
-              <a href="evenement.html">evenement</a>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="./logo-bakery.png" alt="Logo de la boulangerie"></a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="toggleBurgerMenu()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </nav>
-</header>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+                <a href="#"><img src="./logo-bakery.png" alt="Logo de la boulangerie"></a>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="./index 2.html">Accueil</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contactez Nous</a></li>
+                    <li><a href="./evenement.html">Événements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Leonie Bakery est une façon de « rendre à César ce qui appartient à César ».
+    </h1><BR></BR>
+
+    <div class="container55">
+        <img src="./about.png" alt="pain boulanger" class="photo11">
+        <div class="texte11">
+            <p>Quelques années auparavant, il commençait sa carrière auprès d’Eric Kayser qui le charge de la production
+                de
+                pain pour des hôtels de luxe et autres restaurants étoilés. Il fournit notamment le célèbre chef Alain
+                Ducasse. Kamel exporte également son savoir-faire en Angleterre pour la boulangerie l’Aubaine qui sert
+                ses
+                créations aux restaurants alentours tenus par des chefs de renom, comme Pierre Gagnaire et Joël
+                Robuchon.</p>
+        </div>
+    </div>
+    <div class="p1-about">
+        <p>
+            Kamel fait de Leonie Bakery une néo-boulangerie aux influences internationales. La qualité des produits
+            proposés en fait une adresse incontournable à Paris. Il a à cœur d’offrir des produits frais et savoureux,
+            c’est pourquoi, chaque pièce est faite maison et manuellement. Les matières premières, issues de
+            l’agriculture biologique, sont soigneusement sélectionnées auprès de fournisseurs français et européens. Les
+            pains et viennoiseries sont préparés chaque jour, sur place, à base de farine bio et farines CRC (culture
+            raisonnée contrôlée) et de levain naturel fermenté pendant minimum 24 heures par des artisans boulangers et
+            pâtissiers au travail minutieux.
+        </p>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>Adresse : 123 Rue de la Boulangerie, Ville, Pays</p>
+            <p>Email : contact@exemple.com</p>
+            <p>Téléphone : +123 456 789</p>
+        </div>
+    </footer>
+    <script src="./common.js"></script>
 </body>
+
 </html>
