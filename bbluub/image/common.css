@@ -14,6 +14,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    position: fixed;
 }
 
 .navbar {
@@ -55,6 +56,22 @@ header {
     color: #ffdd57;
 }
 
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -79,6 +96,7 @@ header {
         display: flex;
     }
 }
+
 footer {
     background-color: #0d1644; /* Couleur de fond du footer */
     color: #fff; /* Couleur du texte */
@@ -89,5 +107,4 @@ footer {
 .footer-content {
     max-width: 800px; /* Largeur maximale du contenu du footer */
     margin: 0 auto; /* Centrage horizontal */
-    
 }
