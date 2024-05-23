@@ -1,23 +1,15 @@
-/* Global Styles */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: century, Arial, sans-serif;
+    font-family: century;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background: #f4f4f4;
-}
-
-/* Header Styles */
 header {
     background-color: #0d1644;
+    /* Couleur de fond de l'en-tête */
     color: #ffffff;
+    /* Couleur du texte de l'en-tête */
     position: fixed;
     width: 100%;
     top: 0;
@@ -64,22 +56,6 @@ header {
     color: #ffdd57;
 }
 
-@media (max-width: 1024px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
-    }
-}
-
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -89,7 +65,7 @@ header {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #007bff;
+        background-color: #46769e;
         position: absolute;
         top: 50px;
         left: 0;
@@ -107,6 +83,7 @@ header {
 
 main {
     padding-top: 60px;
+    /* Espace pour éviter que le contenu soit caché sous le header fixe */
 }
 
 section {
@@ -119,9 +96,8 @@ section h1 {
 }
 
 .banner-acceuil {
-    width: 100%;
-    display: block;
-    height: 450px;
+  width: 100%;
+  display: block;
 }
 
 body {
@@ -129,38 +105,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: #0d1644;
+    /* Changez cette valeur pour la couleur de fond désirée */
 }
 
-.carousel {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-}
 
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-
-.carousel-item img {
-    height: auto;
-}
-
-.containermy-5 {
-    width: 100%;
-}
 
 ul {
     list-style: none;
+    float: right;
     display: flex;
     margin-top: 20px;
-    flex-wrap: wrap;
 }
 
 ul li a {
@@ -170,6 +124,12 @@ ul li a {
     text-transform: uppercase;
     border: 1px solid;
     margin: 10px;
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-bar {
@@ -192,6 +152,7 @@ ul li a {
     color: black;
 }
 
+
 .nav-bar .icon {
     display: none;
 }
@@ -205,13 +166,12 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
 }
 
-main > div {
+main>div {
     border-radius: 8px;
-    width: 100%;
-    max-width: 420px;
+    width: 420px;
     height: 420px;
     background-image: url('https://i.pinimg.com/originals/b5/aa/75/b5aa75f6d501b5c71e5ee7f622557c24.jpg');
     background-position: center;
@@ -225,7 +185,7 @@ main > div {
     align-items: center;
 }
 
-main > div:hover {
+main>div:hover {
     opacity: 0.6;
     transition: .5s;
     cursor: pointer;
@@ -260,33 +220,41 @@ main > div:hover {
 
 h1 {
     text-align: center;
-    margin: 70px auto;
+    width: 70%;
+    margin: 70px;
+    margin-left: 200px;
     color: bisque;
 }
 
 h3 {
     text-align: center;
-    margin: 70px auto;
+    width: 70%;
+    margin: 70px;
+    margin-left: 200px;
     color: bisque;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    /* Aligne les éléments verticalement au centre */
+    justify-content: flex-start;
+    /* Aligne les éléments horizontalement au début */
     padding: 20px;
 }
 
 .photo {
     width: auto;
-    height: 400px;
-    margin: 20px;
+    /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    height: 500px;
+    /* Maintient le ratio de l'image */
+    margin-right: 100px;
+    /* Espace entre la photo et le texte */
+    padding-left: 150px;
 }
 
 .texte {
-    width: 100%;
-    max-width: 500px;
+    width: 500px;
     text-align: center;
     font-size: 2em;
     color: bisque;
@@ -294,179 +262,302 @@ h3 {
 
 .container1 {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    /* Aligne les éléments verticalement au centre */
+    justify-content: flex-start;
+    /* Aligne les éléments horizontalement au début */
     padding: 20px;
 }
 
 .photo1 {
-    width: auto;
-    height: 400px;
-    margin: 20px;
+    max-width: auto;
+    height: 500px;
+    /* Maintient le ratio de l'image */
+    margin-right: 300px;
+    /* Espace entre la photo et le texte */
 }
 
 .texte1 {
-    width: 100%;
-    max-width: 700px;
+    width: 700px;
     text-align: center;
     font-size: 2em;
+    ;
+    padding-left: 150px;
+    margin-right: 100px;
     color: bisque;
+
 }
+
+
 
 .contact {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-.contact header {
-    background-color: #007bff;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.contact .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.contact .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.contact .menu-toggle {
-    display: none;
-    cursor: pointer;
-}
-
-.contact .nav-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.contact .nav-list li {
-    margin: 0 10px;
-}
-
-.contact .nav-list li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.contact .nav-list li a:hover {
-    color: #ffdd57;
-}
-
-@media (max-width: 768px) {
-    .contact .menu-toggle {
-        display: block;
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        color: #333;
     }
 
-    .contact .nav-list {
-        display: none;
-        flex-direction: column;
-        width: 100%;
+    header {
         background-color: #007bff;
-        position: absolute;
-        top: 50px;
+        color: white;
+        position: fixed;
+        width: 100%;
+        top: 0;
         left: 0;
+        z-index: 1000;
     }
 
-    .contact .nav-list li {
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .contact .nav-list.show {
+    .navbar {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .menu-toggle {
+        display: none;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list li {
+        margin: 0 10px;
+    }
+
+    .nav-list li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+    .nav-list li a:hover {
+        color: #ffdd57;
+    }
+
+    @media (max-width: 768px) {
+        .menu-toggle {
+            display: block;
+        }
+
+        .nav-list {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #007bff;
+            position: absolute;
+            top: 50px;
+            left: 0;
+        }
+
+        .nav-list li {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .nav-list.show {
+            display: flex;
+        }
+    }
+
+    main {
+        padding-top: 60px;
+        /* Espace pour éviter que le contenu soit caché sous le header fixe */
+    }
+
+    .contact-section {
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-section h1 {
+        margin-top: 0;
+        text-align: center;
+        color: #007bff;
+    }
+
+    .contact-section p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        border-color: #007bff;
+    }
+
+    button[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
     }
 }
 
-.contact main {
-    padding-top: 60px;
-}
 
-.contact .contact-section {
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-.contact .contact-section h1 {
-    margin-top: 0;
-    text-align: center;
-    color: #007bff;
-}
-
-.contact .contact-section p {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact .form-group {
-    margin-bottom: 15px;
-}
-
-.contact .form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact .form-group input,
-.contact .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact .form-group input:focus,
-.contact .form-group textarea:focus {
-    border-color: #007bff;
-}
-
-.contact button[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.contact button[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-.contact .contact-section {
-    margin: 25px auto;
+.contact-section {
+    margin: 25px 25%;
 }
 
 .logo img {
     max-height: 90px;
+    /* Réduit la hauteur maximale du logo à 40 pixels */
     margin-left: 20px;
+
+}
+footer {
+    background-color: #0d1644; /* Couleur de fond du footer */
+    color: #fff; /* Couleur du texte */
+    padding: 20px; /* Espacement à l'intérieur du footer */
+    text-align: center; /* Centrage du texte */
 }
 
-footer {
-    background-color: #0d1644
+.footer-content {
+    max-width: 800px; /* Largeur maximale du contenu du footer */
+    margin: 0 auto; /* Centrage horizontal */
+    
 }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .carousel-container {
+    max-width: 350px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .slides {
+    display: none;
+  }
+  
+  .slides img {
+      width: 100%;
+  }
+  
+  /* Next & previous buttons */
+  .previous,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .previous:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .number-text {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation: fade 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.6;
+    }
+    to {
+      opacity: 1;
+    }
+  }
